@@ -217,10 +217,6 @@ class SearchToursView: UIViewController, SelectionListDelegate {
             make.height.equalTo(113)
         }
         
-        durationStackVIew.snp.makeConstraints { make in
-            make.leading.equalTo(horizontalStackView.snp.trailing).inset(16)
-        }
-        
         horizontalStackView.snp.makeConstraints{ make in
             make.height.equalTo(infoStackView).multipliedBy(0.49)
         }
@@ -233,7 +229,6 @@ class SearchToursView: UIViewController, SelectionListDelegate {
         }
         searchButton.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-40)
-            //make.centerX.equalToSuperview()
             make.height.equalTo(60)
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
